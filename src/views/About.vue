@@ -19,10 +19,10 @@
         <MixChart :id="'lineChart'" :width="'300px'" :height="'300px'"></MixChart>
       </div>
       <div>
-        <!-- <BarChart :id="'barChart'" :width="'300px'" :height="'300px'"></BarChart> -->
+        <ScatterChart :id="'barChart'" :width="'300px'" :height="'300px'"></ScatterChart>
       </div>
       <div>
-        <!-- <PieChart :id="'barChart'" :width="'300px'" :height="'300px'"></PieChart> -->
+        <GraphChart :id="'barChart'" :width="'300px'" :height="'300px'"></GraphChart>
       </div>
       <div>
         <!-- <RaddarChart :id="'barChart'" :width="'300px'" :height="'300px'"></RaddarChart> -->
@@ -37,6 +37,8 @@ import BarChart  from '@/components/BarChart'
 import PieChart  from '@/components/PieChart'
 import RaddarChart  from '@/components/RaddarChart'
 import MixChart  from '@/components/MixChart'
+import ScatterChart  from '@/components/ScatterChart'
+import GraphChart  from '@/components/GraphChart'
   export default {
     data() {
       return {
@@ -48,7 +50,9 @@ import MixChart  from '@/components/MixChart'
       BarChart,
       PieChart,
       RaddarChart,
-      MixChart
+      MixChart,
+      ScatterChart,
+      GraphChart
     },
     methods: {
       

@@ -140,6 +140,19 @@ export default {
           animationEasing: 'quadraticOut'
         }]
       })
+    },
+    showLoading() {
+      this.chart.showLoading({
+        text: '正在加载...',
+        spinnerRadiu:20,
+        zlevel: 99
+      })
+    },
+    hideLoading(){
+      this.chart.hideLoading()
+    },
+    clearChart(){
+      this.chart.clear()
     }
   }
 }
